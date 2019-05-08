@@ -1,0 +1,23 @@
+
+(A) Updates related to linearode.f90
+------------------------------------------------------------
+
+1.  Finish documentation
+
+2.  Replace L^2 norms with L^infty norms ?
+
+
+(B) tensor.f90
+--------------------------------------------------------------
+
+1.  Write tensor_adap routine
+
+2.  Use list of partition points instead of ab array
+
+
+(C) chebyshev.f90
+------------------------------------------------
+
+1.  Use list of partition points instead of list of intervals ab
+ 
+
