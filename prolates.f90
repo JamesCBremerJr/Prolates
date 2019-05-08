@@ -117,7 +117,7 @@ k = n/2
 !  arrays
 !
 
-m      = max(ceiling(2.0d0*(n+sqrt(n*c))),50)
+m      = max(ceiling(1.0d0*(n+sqrt(n*c))),50)
 ncoefs = m
 
 allocate(coefsps(m),coefsqs(m))
