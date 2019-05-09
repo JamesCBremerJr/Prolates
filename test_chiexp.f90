@@ -162,7 +162,7 @@ write(iw,'(A)'              ) "Average time             \\"
 write(iw,'(A)', advance='no') "                         &"
 write(iw,'(A)', advance='no') "difference               &"
 write(iw,'(A)', advance='no') "expansion                &"
-write(iw,'(A)')               "Xiao-Roklin             \\"
+write(iw,'(A)')               "Xiao-Rokhlin             \\"
 
 write(iw,'(A)')               "\midrule"
 
