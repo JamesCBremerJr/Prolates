@@ -1,0 +1,74 @@
+This is a package for evaluating the prolate spheroidal wave functions of order 0 and
+integer characteristic exponents.  Its principal claim-to-fame is that it allows
+for the evaluation of these functions in time independent of the bandlimit and
+characteristic exponent.  
+
+The package comprises the following files:
+
+1.  The file utils.f90 contains simple utility routines for printing, sorting and
+the like.
+
+2.  The file prolates.f90 contains code for constructing and manipulating
+expansions of the angular prolate spheroidal wave functions of the first kind of
+order 0 and characteristic values in series of Legendre polynomials.  It uses the 
+Rokhlin-Osipov method to compute said expansions and the well-known three-term 
+recurrence relations to evaluate them.  
+
+This is an implementation of the classical algorithm for evaluating the spheriodal
+wave functions and its running time depends on the bandlimit, characteristic exponent
+and order.
+
+3.   The file chebyshev.f90 contains code for constructing an manipulating
+univariate Chebyshev expansions.
+
+5.  The file prolates_phase.f90 contains code for constructing nonoscillatory
+phase functions which represents the solutions of the spheroidal wave equation
+of order 0 for specified values of the paramters chi and gamma.
+
+This code is capable of evaluating the prolate spheroidal wave functions
+of order 0 in time independent of bandlimit  and characteristic exponent assuming
+the value of the parameter chi in the spheroidal wave equation corresponding
+to the desired value of the characteristic exponent is known.
+
+6.  The file prolates_exps.f90 contains code for constructing expansions of
+the parameter chi and some related quantities as functions of the alternative 
+parameter
+
+    xi = ( 2/pi psi(0; gamma) - 1 ) ,
+
+where psi(x; gamma) is the nonoscillatory phase function for the reduced
+spheroidal wave equation.  Here, the order is taken to be 0.  The expansions
+could be extended to the case of nonzero orders, but they would be become
+quite large.
+
+7.  The file build_exps.f90 contains code for constructing the expansions
+used by the code in fast_prolates.f90.  
+
+IMPORTANT: THIS CODE SHOULD BE EXECUTED IN EXTENDED PRECISION REAL*10
+OR REAL*16 ARTIHMETIC
+
+8.  The file experiments1.f90 contains code for performing the experiments
+discussed in the paper "An O(1) algorithm for the numerical evaluation
+of the Sturm-Liouville eigenvalues of the spheroidal wave functions
+of order zero" and for constructing most of the figures which appear in 
+that paper.
+
+9.  The file experiments2.f90 contains code for performing the experiments
+discussed in the paper "On the numerical evaluation of the prolate spheroidal 
+wave functions of order zero." and for making 
+
+
+10.  The file spheroidal.f90 contains code for constructing and manipulating
+expansions of the angular prolate spheroidal wave functions of the first kind of
+integer orders and characteristic values in series of associated Legendre
+polynomials.  It uses the Rokhlin-Osipov method to compute said expansions and the
+well-known three-term recurrence relations to evaluate them.  
+
+11.  The file spheroidal_phase.f90 contains code for constructing nonoscillatory
+phase functions which represents the solutions of the spheroidal wave equation
+for specified values of the paramters chi, gamma and dmu.  
+
+This code is capable of evaluating the prolate spheroidal wave functions
+in time independent of bandlimit, order and characteristic exponent assuming
+the value of the parameter chi in the spheroidal wave equation corresponding
+to the desired value of the characteristic exponent is known.
